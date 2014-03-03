@@ -32,7 +32,6 @@
   ~ URL: http://www.morganclaypool.com/doi/abs/10.2200/S00468ED1V01Y201301ICR025
   ~
   ~ Copyright statement:
-  ~ --------------------
   ~ (c) 2002-2013 by Mathias Lux (mathias@juggle.at)
   ~     http://www.semanticmetadata.net/lire, http://www.lire-project.net
   -->
@@ -47,7 +46,7 @@
   
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.semanticmetadata</groupId>
+	<groupId>com.github.kzwang</groupId>
 	<artifactId>lire</artifactId>
 	<version>0.9.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -64,6 +63,7 @@
 		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
         <build.timestamp>${maven.build.timestamp}</build.timestamp>
         <build.number />
+        <lucene.version>4.6.1</lucene.version>
 	</properties>
 	
 	<prerequisites>
@@ -81,23 +81,28 @@
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
-			<version>4.2.0</version>
+            <version>${lucene.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-queryparser</artifactId>
-			<version>4.2.0</version>
+            <version>${lucene.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-analyzers-common</artifactId>
-			<version>4.2.0</version>
+            <version>${lucene.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-math3</artifactId>
 			<version>3.1.1</version>
 		</dependency>
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-stable</artifactId>
+            <version>3.6.10</version>
+        </dependency>
 		<dependency>
 			<groupId>com.stromberglabs</groupId>
 			<artifactId>jopensurf</artifactId>
