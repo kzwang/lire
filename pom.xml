@@ -48,8 +48,14 @@
 
 	<groupId>com.github.kzwang</groupId>
 	<artifactId>lire</artifactId>
-	<version>0.9.4-SNAPSHOT</version>
+	<version>0.9.4-kzwang-beta1</version>
 	<packaging>jar</packaging>
+
+    <scm>
+        <connection>scm:git:git@github.com:kzwang/lire.git</connection>
+        <developerConnection>scm:git:git@github.com:kzwang/lire.git</developerConnection>
+        <url>http://github.com/kzwang/lire</url>
+    </scm>
 
 	<name>lire</name>
 	<description>Lucene Image Retrieval</description>
