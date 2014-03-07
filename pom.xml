@@ -102,7 +102,7 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-math3</artifactId>
-			<version>3.1.1</version>
+			<version>3.2</version>
 		</dependency>
         <dependency>
             <groupId>nz.ac.waikato.cms.weka</groupId>
@@ -110,11 +110,9 @@
             <version>3.6.10</version>
         </dependency>
 		<dependency>
-			<groupId>com.stromberglabs</groupId>
+			<groupId>com.github.kzwang</groupId>
 			<artifactId>jopensurf</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/JOpenSurf.jar</systemPath>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
